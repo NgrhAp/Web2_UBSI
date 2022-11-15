@@ -32,6 +32,14 @@ class Autentifikasi extends CI_Controller
             $this->_login();
         }
     }
+    public function blok()
+    {
+        $this->load->view('autentifikasi/blok');
+    }
+    public function gagal()
+    {
+        $this->load->view('autentifikasi/gagal');
+    }
 
     private function _login()
     {
